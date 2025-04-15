@@ -80,10 +80,20 @@ This rule allows you to toggle between English and Japanese input methods using 
 - Karabiner-Elements
 - Japanese input source must be added to your input sources in System Preferences
 
-## Notes
+## Important: Spotlight Conflict
 
-- If you're using macOS Spotlight with Command+Space, you'll need to change your Spotlight shortcut in System Preferences → Keyboard → Shortcuts → Spotlight
+By default, macOS assigns Command+Space to Spotlight search. This custom rule will conflict with that default setting. To use this custom rule, you must first change the Spotlight shortcut:
+
+1. Open System Preferences → Keyboard → Shortcuts → Spotlight
+2. Change the "Show Spotlight search" shortcut to something else (e.g., Option+Space)
+3. Alternatively, you can disable the Spotlight shortcut completely if you prefer
+
+Without changing this setting, the Command+Space input switching will not work properly as Spotlight will intercept the keystroke before Karabiner-Elements can process it.
+
+## Additional Notes
+
 - Make sure both English and Japanese input sources are added in System Preferences → Keyboard → Input Sources
+- If you experience any issues, check that Karabiner-Elements has proper permissions in System Preferences → Security & Privacy → Privacy → Accessibility
 
 ## License
 
